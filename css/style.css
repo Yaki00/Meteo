@@ -1,0 +1,103 @@
+.loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333333;
+    transition: opacity 0.75s, visibility 0.75s;
+}
+
+.loader--hidden{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader::after{
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 15px solid #dddddd;
+    border-top-color: blue;
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
+}
+@keyframes loading{
+    from{transform: rotate(0turn)}
+    to { transform: rotate(1turn);}
+}
+
+.base{
+    display: flex;
+}
+.btnpousse{
+    height: 35;
+    background-color: rgb(109, 160, 255);
+}
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(88, 255, 172);
+}
+.contenu{
+    margin: auto;
+    width: 700px;
+    height: 200px;
+    margin-top: 30vh;
+
+}
+.base{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    height: 35;
+    border-radius: 5px;
+    border: solid 0px black;
+}
+button:hover{
+    background-color: #333333;
+}
+
+.sortie{
+    display: flex;
+    margin: auto;
+    width: 700px;
+    height: 300px;
+}
+
+.mot,
+.ville{
+    display: inline-block;
+}
+.mot{
+    margin-right: 10px;
+}
+.ville{
+    margin-right: 10px;
+}
+
+.temperature,
+.cel{
+    display:block;
+}
+.temperature{
+    margin-right: 10px;
+}
+
+.couleursbtn{
+    background-color: rgb(75, 75, 75);
+}
+#codepostale{
+    width: 110px;
+}
